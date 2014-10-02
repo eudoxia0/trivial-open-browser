@@ -7,9 +7,9 @@ Open the browser to a URL, on any system.
 ~~~
 
 By default, the library runs a shell command to open the browser on Windows,
-Linux and OS X. You can customize it by setting the value of
-`*default-browser-function*` to a custom function that takes a URL as its
-argument and somehow opens the browser to that URL.
+Linux and OS X. You can customize this by setting the value of
+`*browser-function*` to a custom function that takes a URL as its argument and
+somehow opens the browser to that URL.
 
 # License
 

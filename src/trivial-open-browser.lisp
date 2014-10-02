@@ -2,7 +2,7 @@
 (defpackage trivial-open-browser
   (:use :cl)
   (:export :open-browser-through-shell
-           :*default-browser-function*
+           :*browser-function*
            :open-browser))
 (in-package :trivial-open-browser)
 
@@ -18,9 +18,10 @@
   "Run a shell command to open `url`."
   (uiop:run-program (format nil +format-string+ url)))
 
-(defparameter *default-browser-function* #'open-browser-through-shell
-  "The function that gets called with the URL to open the browser.")
+(defparameter *browser-function* #'open-browser-through-shell
+  "The function that gets called with the URL to open the browser. Defaults to
+  `browser-function`.")
 
 (defun open-browser (url)
   "Open the browser to `url`."
-  (funcall *default-browser-function* url))
+  (funcall *browser-function* url))
