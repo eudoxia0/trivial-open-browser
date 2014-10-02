@@ -1,7 +1,8 @@
 (in-package :cl-user)
 (defpackage trivial-open-browser
   (:use :cl)
-  (:export :*default-browser-function*
+  (:export :open-browser-through-shell
+           :*default-browser-function*
            :open-browser))
 (in-package :trivial-open-browser)
 
