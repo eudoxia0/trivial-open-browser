@@ -8,7 +8,7 @@
   :author "Fernando Borretti"
   :license "MIT"
   :homepage "https://github.com/eudoxia0/trivial-open-browser"
-  :depends-on ()
+  :depends-on (:uiop)
   :components ((:module "src"
                 :components
                 ((:file "trivial-open-browser"))))
