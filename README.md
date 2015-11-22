@@ -1,4 +1,6 @@
-# `trivial-open-browser`
+# trivial-open-browser
+
+[![Quicklisp](http://quickdocs.org/badge/trivial-open-browser.svg)](http://quickdocs.org/trivial-open-browser/)
 
 Open the browser to a URL, on any system.
 
