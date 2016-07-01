@@ -8,7 +8,7 @@
 
 (defparameter +format-string+
   #+(or win32 mswindows)
-  "start ~S"
+  "explorer ~S"
   #+(or macos darwin)
   "open ~S"
   #-(or win32 mswindows macos darwin)
